@@ -28,6 +28,7 @@ clear_btn.addEventListener("click", () => clearAll());
 function clearAll() {
   const buttons = [one, two, three, four, five, six, seven, eight, nine];
   buttons.forEach((button) => (button.innerText = ""));
+  xTurn = true ;
 }
 
 function handleClick(btn) {
