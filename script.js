@@ -13,7 +13,7 @@ const clear_btn = document.getElementById("clear_btn");
 let xTurn = true;
 let counter = 0;
 let isWin = false;
-// you can optimise this by using a simple array 
+// you can optimise this by using a simple array
 one.addEventListener("click", () => handleClick(one));
 two.addEventListener("click", () => handleClick(two));
 three.addEventListener("click", () => handleClick(three));
@@ -28,10 +28,10 @@ clear_btn.addEventListener("click", () => clearAll());
 function clearAll() {
   const buttons = [one, two, three, four, five, six, seven, eight, nine];
   buttons.forEach((button) => (button.innerText = ""));
-xTurn = true;
+  xTurn = true;
   counter = 0;
-  isWin = false; 
-  result.innerText = ""; 
+  isWin = false;
+  result.innerText = "";
 }
 
 function handleClick(btn) {
@@ -68,8 +68,6 @@ function handleClick(btn) {
 
   xTurn = !xTurn;
 }
-
-
 
 function checkWin(one, two, three) {
   if (
