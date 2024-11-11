@@ -13,7 +13,7 @@ const clear_btn = document.getElementById("clear_btn");
 let xTurn = true;
 let counter = 0;
 let isWin = false;
-
+// you can optimise this by using a simple array 
 one.addEventListener("click", () => handleClick(one));
 two.addEventListener("click", () => handleClick(two));
 three.addEventListener("click", () => handleClick(three));
@@ -64,6 +64,8 @@ function handleClick(btn) {
 
   xTurn = !xTurn;
 }
+
+
 
 function checkWin(one, two, three) {
   if (
